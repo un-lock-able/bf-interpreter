@@ -31,7 +31,7 @@ void removeSpace(){
 }
 
 int main(){
-	infile.open("/examples/helloworld.bf");
+	infile.open("./examples/helloworld.bf");
 	readProgrameFile();
 	infile.close();
 	removeSpace();
@@ -50,7 +50,7 @@ int main(){
 				paper[ptr]--;
 				break;
 			case '.':
-				cout << paper[ptr]<<endl;
+				cout << paper[ptr];
 				break;
 			case ',':
 				//cout << "\nWAITING FOR INPUT:"<<endl;
