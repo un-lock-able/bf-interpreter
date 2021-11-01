@@ -31,7 +31,7 @@ void removeSpace(){
 }
 
 int main(){
-	infile.open("until42.bf");
+	infile.open("/examples/helloworld.bf");
 	readProgrameFile();
 	infile.close();
 	removeSpace();
