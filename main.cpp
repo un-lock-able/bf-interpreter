@@ -30,8 +30,12 @@ void removeSpace(){
 	}
 }
 
-int main(){
-	infile.open("./examples/helloworld.bf");
+int main(int argc, char* argv[]){
+	infile.open(argv[1]);
+	if (!infile){
+		cout<<"File not found!";
+		return 1;
+	}
 	readProgrameFile();
 	infile.close();
 	removeSpace();
