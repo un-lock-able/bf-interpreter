@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-const int numOfByte = 20;
+const int numOfByte = 200;
 char paper[numOfByte] = {0};
 char ptr = 0;
 int filePos = 0;
